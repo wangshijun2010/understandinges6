@@ -13,6 +13,7 @@ The first 2^16 code points are represented as single 16-bit code units in UTF-16
 ECMAScript 5 kept all operations as working on 16-bit code units, meaning that you could get unexpected results from strings containing surrogate pairs. For example:
 
 {lang=js}
+
     var text = "𠮷";
 
     console.log(text.length);           // 2
